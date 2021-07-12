@@ -14,3 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+getwd()读取当前路径
+setwd()更改路径
+https://github.com/satijalab/seurat-data
+https://marcelosua.github.io/SPOTlight/#03_Load_data
