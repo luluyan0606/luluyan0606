@@ -1,1 +1,9 @@
+### create conda virtual environment example 
+conda create -y -n velocyto_env python="version"
+
+### add kernel into jupyter notebook
+python3 -m ipykernel install --user
+python3 -m ipykernel install --user --name=velocyto_env --display-name='Environment (velocyto_env)'
+
+
 
