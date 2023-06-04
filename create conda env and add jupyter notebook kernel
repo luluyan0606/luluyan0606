@@ -6,5 +6,10 @@ conda create -y -n velocyto_env python="version"
 python3 -m ipykernel install --user
 python3 -m ipykernel install --user --name=velocyto_env --display-name='Environment (velocyto_env)'
 
+2023-06-04
+### error during pip istall deepvelo
+puthon -m pip install deepvelo
+dgl == 0.4
+
 
 
