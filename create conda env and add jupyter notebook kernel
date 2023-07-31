@@ -15,5 +15,11 @@ dgl == 0.4
 ### check jupyter kernel list
 jupyter kernelspec list
 
+2023-07-31
+### check installed env
+conda info --env
+### delete installed env
+conda remove -n your_env_name --all
+
 
 
