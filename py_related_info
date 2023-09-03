@@ -1,0 +1,2 @@
+# 2023-09-03
+np.linspace(start, stop, num) #在start和stop之间返回均匀间隔的数据
