@@ -21,5 +21,10 @@ conda info --env
 ### delete installed env
 conda remove -n your_env_name --all
 
+2023-10-10
+## xshell终端运行.py文件
+step1: 修改.py文件权限为可运行文件
+chmod u+x xxx.py
+
 
 
