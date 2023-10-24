@@ -1,4 +1,4 @@
-Date：2023-04-10
+2023-04-10
 ### create conda virtual environment example 
 conda create -y -n velocyto_env python="version"
 
@@ -25,6 +25,10 @@ conda remove -n your_env_name --all
 ## xshell终端运行.py文件
 step1: 修改.py文件权限为可运行文件
 chmod u+x xxx.py
+
+2023-10-10
+## Pytorch自动更新参数
+pytorch中如果参数在for循环中，无法自动更新
 
 
 
