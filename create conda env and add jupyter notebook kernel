@@ -30,5 +30,8 @@ chmod u+x xxx.py
 ## Pytorch自动更新参数
 pytorch中如果参数在for循环中，无法自动更新
 
+2023-11-13
+## Linux终端运行R-4.2
+/home/yll/R-4.2/bin/Rscript + xx.R
 
 
