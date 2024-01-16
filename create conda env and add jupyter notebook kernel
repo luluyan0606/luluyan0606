@@ -38,4 +38,5 @@ pytorch中如果参数在for循环中，无法自动更新
 2024-1-16
 ## 超算使用
 code_server打开终端->选择yll文件夹->点击右键open in integrated terminal
+输入python3 xx.py文件运行代码
 
