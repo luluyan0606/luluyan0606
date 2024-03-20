@@ -3,5 +3,5 @@ np.linspace(start, stop, num) #在start和stop之间返回均匀间隔的数据
 
 # 2024-03-20
 文件命名
-02_spvelo_Method2_1: set parameter with random initial in [0,1]
-02_spvelo_Method2_2: set parameter with random initial in [-1,1]  
+02_spvelo_Method2_1: set parameter with random initial in [0,1], result save to "random_initial_1"
+02_spvelo_Method2_2: set parameter with random initial in [-1,1], result save to "random_initial_2"  
