@@ -8,7 +8,7 @@ python3 -m ipykernel install --user --name=velocyto_env --display-name='Environm
 
 2023-06-04
 ### error during pip istall deepvelo
-puthon -m pip install deepvelo
+python -m pip install deepvelo
 dgl == 0.4
 
 2023-07-12
