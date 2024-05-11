@@ -1,0 +1,30 @@
+#python读取h5数据
+import anndata
+
+scRNA_path = "/home/yll/velocity_methods/dataset/scRNAseq/GSE153164"
+f = h5py.File(scRNA_path + '/GSM4635077_E16_filtered_gene_bc_matrices_h5.h5', 'r')
+for key in f.keys():
+    print(f[key], key, f[key].name)
+    
+mm10_group =  f["mm10"]
+for key in mm10_group.keys():
+#     print(mm10_group[key], mm10_group[key].name)
+    print(mm10_group[key].name)  
+    
+mm10_group = f["mm10"]
+data_dict = {}
+for key in mm10_group.keys():
+    print(key)
+    dataset = mm10_group[key]
+    data_dict[key] = dataset[:] 
+    print("Dataset name:", dataset.name)
+    print("Dataset value:", dataset[:])  # 读取dataset的值
+
+barcodes = data_dict['barcodes']
+barcodes = [x.decode('utf-8') for x in barcodes]
+counts = data_dict['data']
+gene_names = data_dict['gene_names']
+indices = data_dict['indices']
+indptr = data_dict['indptr']
+gene_names = [x.decode('utf-8') for x in gene_names]
+shape = data_dict['shape']
