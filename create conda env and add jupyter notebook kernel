@@ -5,6 +5,10 @@ conda create -y -n velocyto_env python="version"
 ### add kernel into jupyter notebook    
 python3 -m ipykernel install --user
 python3 -m ipykernel install --user --name=velocyto_env --display-name='Environment (velocyto_env)'
+### add kernel into jupyter notebook (虚拟环境)
+python -m pip install ipykernel -U --force-reinstall
+python -m ipykernel install --user --name=velocyto_env --display-name='Environment (velocyto_env)'
+
 
 2023-06-04
 ### error during pip istall deepvelo
