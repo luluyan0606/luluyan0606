@@ -48,7 +48,7 @@ code_server打开终端->选择yll文件夹->点击右键open in integrated term
 输入python3 xx.py文件运行代码
 
 2024-02-02
-nohup Rscript xx.py > output.txt &
+nohup Rscript xx.R > output.txt &
 
 2024-05-29
 ## error during import deepvelo
