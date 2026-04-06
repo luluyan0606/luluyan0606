@@ -10,6 +10,9 @@ python3 -m ipykernel install --user --name=velocyto_env --display-name='Environm
 python -m pip install ipykernel -U --force-reinstall
 python -m ipykernel install --user --name=velocyto_env --display-name='Environment (velocyto_env)'
 
+### install package in virtual environment
+python -m pip install package_name
+
 2023-06-04
 ### error during pip istall deepvelo
 python -m pip install deepvelo
