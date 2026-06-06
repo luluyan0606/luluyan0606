@@ -1,0 +1,33 @@
+# 上传单个文件到服务器命令
+scp /Users/yourname/Desktop/test.txt username@123.123.123.123:/home/username/
+
+# 上传整个文件夹到服务器
+scp -r /Users/yourname/Desktop/my_project username@123.123.123.123:/home/username/
+
+# 安装 R server studio
+sudo apt update
+sudo apt install -y gdebi-core
+sudo gdebi rstudio-server-2025.04.0-490-amd64.deb
+
+# 安装完成后检查服务状态：
+sudo systemctl status rstudio-server
+
+# 如果没有启动：
+sudo systemctl start rstudio-server
+sudo systemctl enable rstudio-server
+
+# 然后在浏览器访问：
+http://10.131.175.121:8787
+
+# 如果浏览器打不开，先在服务器上检查端口：
+sudo ss -lntp | grep 8787
+
+# 如果服务器开了防火墙，开放 8787 端口：
+sudo ufw allow 8787/tcp
+sudo ufw reload
+
+# 更安全的方式是不开放 8787 端口，而是在 Mac 终端做 SSH 转发：
+ssh -L 8787:localhost:8787 ubuntu@10.131.175.121
+
+# 然后在 Mac 浏览器打开：
+http://localhost:8787
